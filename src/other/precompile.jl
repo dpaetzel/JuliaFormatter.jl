@@ -1,5 +1,5 @@
 #! format: off
-using PrecompileTools
+using PrecompileTools: @setup_workload, @compile_workload
 @setup_workload begin
     dir = joinpath(@__DIR__,"..", "..")
     str = raw"""

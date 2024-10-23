@@ -559,4 +559,8 @@ if Base.VERSION >= v"1.5"
     include("other/precompile.jl")
 end
 
+function julia_main()::Cint
+    return Cint(format(ARGS[1]))
+end
+
 end
